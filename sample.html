@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Kenjin's Todo list</h1>
+      <form action="" id="add-form">
+        <input type="text" id="input-task" name="input-task" />
+        <button class="button-add">追加</button>
+      </form>
+      <div class="empty-state">
+        <img src="icon.png" />
+        <h2 class="empty-state__title">タスクがありません</h2>
+        <p class="empty-state__description">タスクを登録しましょう</p>
+      </div>
+      <ul id="todo-list">
+        <li class="list-item">
+          <span class="task-name">
+            <input type="checkbox" />
+            <input type="text" />
+            <span class="done">taskA</span>
+          </span>
+          <span class="button-edit-delete">
+            <button class="button-edit">編集</button>
+            <button class="button-delete">削除</button>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

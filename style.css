@@ -1,0 +1,113 @@
+h1{
+  text-align: center;
+}
+
+#container {
+  width: 500px;
+  margin: 5px auto;
+}
+
+#input-task{
+  width: 430px;
+}
+
+/* タスクアイテム */
+ul{
+  list-style: none; /* 「・」無し */
+  padding: 0; /* 左の隙間消す */
+}
+
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items:center; /* 上下中央揃え */
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* ボタン */
+.button {
+  border: none;
+  color: white;
+  padding: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-add {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius: 10%;
+  margin: 5px;
+}
+
+.button-add:hover {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10%;
+}
+
+.button-edit {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #555555;
+  border-radius: 10%;
+  margin: 5px;
+}
+
+.button-edit:hover {
+  background-color: #555555;
+  color: white;
+  border-radius: 10%;
+}
+
+.button-delete {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+  border-radius: 10%;
+}
+
+.button-delete:hover {
+  background-color: #f44336;
+  color: white;
+  border-radius: 10%;
+}
+
+/* タスクが無いときの設定 */
+.empty-state {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+img {
+  width: 25%;
+  height: 25%;
+}
+
+.checklist-icon {
+  margin-bottom: 5px;
+}
+
+.empty-state__title, .empty-state__description {
+  margin-bottom: 5px;
+}
+
+/* Add this below the other styles */
+#todo-list:empty {
+  display: none;
+}
+
+#todo-list:empty + .empty-state {
+  display: flex;
+}
